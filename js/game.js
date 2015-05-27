@@ -1,101 +1,69 @@
 var button1 = document.getElementById("btn1");
 var button2 = document.getElementById("btn2");
-var button3 = document.getElementById("btn3");
-var button4 = document.getElementById("btn4");
-
-var buttonArray = [button1, button2, button3, button4];
-
-var answer = "TobbeP";
-var score;
+var score = 0;
 var questionNumber = 0;
-var questionList = ["asd", "Vad heter Tobbe-Ps favorit hockey-lag?", "asfffffffffd", "FIAKASSAAS", "asaaaad"];
-for(var i = 0; i < buttonArray.length; i++)
-{
-buttonArray[i].addEventListener("click", function()
-{
+var answer = "JA";
+button1.addEventListener("click", function (){
+    
     if(questionNumber == 0)
     {
-    var tempq = questionList[questionNumber];
-    answer = "Fisk";
-    button1.innerHTML = "TobbeP";
-    button2.innerHTML = "Fiske";
-    button3.innerHTML = "Hejhej";
-    button4.innerHTML = "CsNoob";
-    document.getElementById("question").innerHTML = tempq;
-    questionNumber++;
+
+            document.getElementById("question").innerHTML = "Vet Leiny hur man smokear CT-spawn på Mirran som T?";
+            document.getElementById("points").innerHTML = score = score + 1;
     }
-    
+
         if(questionNumber == 1)
     {
-    
-    var tempq = questionList[questionNumber];
-    answer = "Fisk";
-    button1.innerHTML = "TobbeP";
-    button2.innerHTML = "Fiske";
-    button3.innerHTML = "Hejhej";
-    button4.innerHTML = "CsNoob";
-    document.getElementById("question").innerHTML = tempq;
-    questionNumber++;
+        
+            document.getElementById("points").innerHTML = score = score + 1;
+            document.getElementById("question").innerHTML = "Är vår JavaScript-kod galet snygg?";
     }
     
     if(questionNumber == 2)
-    { 
-    var tempq = questionList[questionNumber];
-    answer = "Fisk";
-    button1.innerHTML = "TobbeP";
-    button2.innerHTML = "Fiske";
-    button3.innerHTML = "Hejhej";
-    button4.innerHTML = "CsNoob";
-    document.getElementById("question").innerHTML = tempq;
-    questionNumber++;
+    {
+            document.getElementById("points").innerHTML = score = score + 1;
+        
     }
+        console.log(questionNumber);
+    questionNumber = questionNumber + 1;
+    
+        if(questionNumber > 3)
+{
+     var el = document.getElementById("bigAssRuta");
+    el.classList.remove("displayNone");
+    el.style.opacity = "1";
+}
+})
+
+button2.addEventListener("click", function (){
+    if(questionNumber == 0)
+    {
+            document.getElementById("points").innerHTML = score;
+           document.getElementById("question").innerHTML = "Vet Leiny hur man smokear CT-spawn på Mirran som T?";
+    }
+        if(questionNumber == 1)
+    {
+            document.getElementById("points").innerHTML = score;
+             document.getElementById("question").innerHTML = "Är vår JavaScript-kod galet snygg?";
+        }
+        
+        if(questionNumber == 2)
+    {
+            document.getElementById("points").innerHTML = score;
+    }
+    
+    questionNumber = questionNumber + 1;
+        console.log(questionNumber);
+    
+    if(questionNumber > 3)
+{
+     var el = document.getElementById("bigAssRuta");
+    el.classList.remove("displayNone");
+    
+}
+})
+console.log(questionNumber);
+
+  
 
     
-        if(questionNumber == 3)
-    {
-   if(answer == button1.value)
-   {
-        score++;
-       questionNumber++;
-       
-   }
-    else
-    {
-        questionNumber++;
-    }
-    
-    var tempq = questionList[questionNumber];
-    answer = "Fisk";
-    button1.innerHTML = "TobbeP";
-    button2.innerHTML = "Fiske";
-    button3.innerHTML = "Hejhej";
-    button4.innerHTML = "CsNoob";
-    document.getElementById("question").innerHTML = tempq;
-    }
-    
-        if(questionNumber == 4)
-    {
-   if(answer == button1.value)
-   {
-        score++;
-       questionNumber++;
-       
-   }
-    else
-    {
-        questionNumber++;
-    }
-    
-    var tempq = questionList[questionNumber];
-    answer = "Fisk";
-    button1.innerHTML = "TobbeP";
-    button2.innerHTML = "Fiske";
-    button3.innerHTML = "Hejhej";
-    button4.innerHTML = "CsNoob";
-    document.getElementById("question").innerHTML = tempq;
-    }
-})
-}
-console.log(answer);
-console.log(questionNumber);
-console.log(answer);
