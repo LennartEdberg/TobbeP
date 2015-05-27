@@ -4,7 +4,7 @@ var button3 = document.getElementById("btn3");
 var button4 = document.getElementById("btn4");
 var answer = "";
 var score;
-var questionNumber = 0;
+var questionNumber = 4;
 var questionList = ["", "", "", "", ""];
 
 
@@ -97,3 +97,5 @@ if(questionNumber = 4)
 {
    answer = "TobbeP5";
 }
+console.log(questionNumber);
+console.log(answer);
