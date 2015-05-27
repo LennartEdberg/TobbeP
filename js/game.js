@@ -4,7 +4,7 @@ var button3 = document.getElementById("btn3");
 var button4 = document.getElementById("btn4");
 var answer = "";
 var score;
-var questionNumber = 4;
+var questionNumber = 0;
 var questionList = ["", "", "", "", ""];
 
 
@@ -68,7 +68,7 @@ button4.addEventListener("click", function()
 })
 
 
-if(questionNumber = 0)
+if(questionNumber = 4)
 {
     answer = "TobbeP";
     button1.value = "TobbeP";
